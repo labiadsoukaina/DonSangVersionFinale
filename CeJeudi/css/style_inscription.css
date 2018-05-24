@@ -1,0 +1,103 @@
+/*fixer le header*/
+.header {
+	position: fixed;
+	width: 100%;
+	z-index: 50;
+	border-radius: 0;
+	top: 0px;
+	background: rgba(255, 255, 255, 0.70);
+}
+/* background de la barre navigation*/
+.navbar-inverse {
+	background: transparent;
+}
+/* background du truc nni de la liste de la barre navigation*/
+.navbar-inverse .navbar-toggle {
+	background-color: #005f8d;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+	background: #005f8d;
+}
+/*couleur de la barre de navigation au menu*/
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+	color: #005f8d;
+	background: none;
+	border-radius: 0px;
+}
+/* police de la liste de la barre de nav */
+.navbar-inverse .navbar-nav > li > a {
+	color: #A5A5A5;
+	font-size: 1.2em;
+	line-height: normal;
+	margin: 17px;
+	padding: 6px 0px !important;
+	border-radius: 5px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+/* bordure de la barre de nav */
+.header .navbar {
+	margin: 0;
+	background: transparent;
+	border: 0;
+}
+/* couleur de la police de la barre de navigation HORS header*/
+.addBg .navbar-inverse .navbar-nav > li > a {
+	color: #fff;
+}
+
+
+
+/* Hover couleur de la police de la barre de navigation au header*/
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+	color: #00a1cb;
+}
+/* couleur de la police de la barre de navigation quand on ajoute la classe addBg (quand ce n'est pas le header*/
+.addBg .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+	color: #005f8d;
+}
+/* background des ligne (icon-bar) du truc nni de la liste de la barre navigation*/
+.navbar-inverse .navbar-toggle:hover .icon-bar {
+	background: #fff;
+}
+/* le titre de la barre de navigation*/
+.header .navbar-brand {
+	float: left;
+	padding: 22px 15px;
+	line-height: 18px;
+	height: 50px;/*color:#005f8d;*/
+}
+/* le titre de la barre de navigation*/
+.navbar-brand b {
+   
+	color: #00a1cb;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 900;
+}
+/* le titre de la barre de navigation autre que sur accueil*/
+.addBg .navbar-brand b {
+	color: rebeccapurple;
+}
+/* le titre de la barre de navigation*/
+.logo {
+	font-size: 2.2em;
+	text-shadow: none;
+	margin: 8px 0 0 0;
+}
+.header .navbar-nav > li > a {
+	padding: 25px 18px;
+}
+/*taille des  bloc section*/
+.page-section {
+	width: 100%;
+	height: auto;
+	padding: 35px 0;
+}
+/*taille des h1 dans les   bloc section*/
+.page-section h1 {
+	font-size: 3.5em;
+	margin: 90px 0 30px;
+	line-height: 1.2em;
+}

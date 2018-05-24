@@ -1,0 +1,526 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+body {
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.7;
+	color: #312a2a;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	background: #fff;
+	transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+}
+::selection {
+	color: #fff;
+	background: #d61e1e;
+}
+
+::-moz-selection {
+ color: #fff;
+ background: #005f8d;
+}
+
+/*boule carroussel*/
+.carousel-indicators .active{background-color:#00a1cb;width: 37px;height: 37px;border-radius: 20px;}
+    .carousel-indicators li {background: rgba(67, 67, 68, 0.7);
+    width: 37px;height: 37px;border-radius: 20px; }
+
+/* ----------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------*/
+/*fixer le header*/
+.header {
+	position: fixed;
+	width: 100%;
+	z-index: 50;
+	border-radius: 0;
+	top: 0px;
+	background: rgba(255, 255, 255, 0.70);
+}
+
+/* background de la barre navigation*/
+.navbar-inverse {
+	background: transparent;
+}
+/* background du truc nni de la liste de la barre navigation*/
+.navbar-inverse .navbar-toggle {
+	background-color: #005f8d;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+	background: #005f8d;
+}
+/*couleur de la barre de navigation au menu*/
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+	color: #005f8d;
+	background: none;
+	border-radius: 0px;
+}
+/*couleur de la barre de navigation autre que menu*/
+.addBg {
+	background: red;
+	transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+    opacity: 0.92;
+}
+/* police de la liste de la barre de nav */
+.navbar-inverse .navbar-nav > li > a {
+	color: #A5A5A5;
+	font-size: 1.2em;
+	line-height: normal;
+	margin: 17px;
+	padding: 6px 0px !important;
+	border-radius: 5px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+/* bordure de la barre de nav */
+.header .navbar {
+	margin: 0;
+	background: transparent;
+	border: 0;
+}
+
+/* couleur de la police de la barre de navigation HORS header*/
+.addBg .navbar-inverse .navbar-nav > li > a {
+	color: #fff;
+}
+
+/* Hover couleur de la police de la barre de navigation au header*/
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+	color: #00a1cb;
+}
+/* couleur de la police de la barre de navigation quand on ajoute la classe addBg (quand ce n'est pas le header*/
+.addBg .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+	color: #005f8d;
+}
+/* background des ligne (icon-bar) du truc nni de la liste de la barre navigation*/
+.navbar-inverse .navbar-toggle:hover .icon-bar {
+	background: #fff;
+}
+/* le titre de la barre de navigation*/
+.header .navbar-brand {
+	float: left;
+	padding: 22px 15px;
+	line-height: 18px;
+	height: 50px;/*color:#005f8d;*/
+}
+/* le titre de la barre de navigation*/
+.navbar-brand b {
+   
+	color: #00a1cb;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 900;
+}
+/* le titre de la barre de navigation autre que sur accueil*/
+.addBg .navbar-brand b {
+	color: rebeccapurple;
+}
+/* le titre de la barre de navigation*/
+.logo {
+	font-size: 2.2em;
+	text-shadow: none;
+	margin: 8px 0 0 0;
+}
+.header .navbar-nav > li > a {
+	padding: 25px 18px;
+}
+/*taille des  bloc section*/
+.page-section {
+	width: 100%;
+	height: auto;
+	padding: 35px 0;
+}
+/*taille des h1 dans les   bloc section*/
+.page-section h1 {
+	font-size: 3.5em;
+	margin: 90px 0 30px;
+	line-height: 1.2em;
+}
+
+
+/*--- Banner ----*/
+/*ligne à la fin de banner-container (photo)*/
+.banner-container { 
+	width: 100%;
+	position: relative;
+	padding: 0px;
+	box-shadow: 0px 0px 1px rgba(0,0,0,0.4);
+	/*background: url("../images/banner-bg.jpg") no-repeat;*/
+	background-size: 100% 100%;
+	background-size: cover;
+	position: relative;
+	border-bottom: 2px #005f8d solid;
+}
+/*taille des image de carroussel*/
+.banner-container > img {
+	width: 100%;
+}
+/* le texte dans la classe banneur (sur la premiere section*/
+.banner-content {
+	
+}
+/* les h1 de la classe hero-text*/
+.hero-text h1 {
+	color: #fff;
+	font-size: 6.5em;
+	margin: 2% 0 30px;
+	line-height: 1.5em;
+	font-family: 'Roboto', sans-serif;
+	text-shadow: 1px 1px 1px #8F8F8F;
+	font-weight: 900;
+	font-size: 48px;
+	margin: 37px 0 13px;
+	text-transform: uppercase;
+	text-shadow: 0 1px 1px rgba(124, 124, 124, 1);
+	background: rgba(0, 161, 203, 0.53);
+	display: inline-block;
+	/* float: left; */
+	margin: 0 auto;
+	text-align: center;
+	padding: 15px 17px;
+}
+/* le texte du lien avec une fleche*/
+.hero-text {
+	color: #000;
+	width: 83%;
+	text-align: center;
+	margin: 35% auto 24px auto;
+	font-family: 'Oswald', sans-serif;
+}
+/* le lien avec une fleche*/
+.arrow-link {
+	display: block;
+	font-size: 32px;
+	margin-top: 20px;
+	height: 60px;
+	line-height: 60px;
+	overflow: hidden;
+	text-align: center;
+	vertical-align: top;
+	width: 60px;
+	margin: 0 auto;
+}
+a.arrow-link {
+	color: #005f8d;
+}
+/* background et color pour un bloc avec la class colord*/
+.colord {
+	background: #005f8d;
+}
+.colord p {
+	color: #DAE0FF;
+}
+.colord h3 {
+	color: #fff;
+}
+/* c1 et c2 pour deux couleur différente pour deux background */
+.c1 {
+	background: rgba(0, 161, 203, 0.64);
+	padding: 15px;
+}
+.c2 {
+	background: rgba(0, 161, 203, 0.85);
+	padding: 15px;
+}
+.c1:hover, .c2:hover {
+	background: rgba(0, 43, 54, 0.89);
+	cursor: pointer;
+}
+/* couleur de text h2 de heading*/
+.heading h2 {
+	color: #222;
+}
+/* ?????????????????????????????????*/
+.pageSection {
+	min-height: 600px;
+	padding: 20px;
+	background: #dddddd;
+}
+.pageSection:nth-child(odd) {
+	background: #eeeeee;
+}
+/* footer*/
+footer {
+	border-top: 5px solid red;
+	padding: 45px 0;
+	background: #fff;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 768px) {
+.header .navbar-brand {
+	padding-left: 0;
+}
+.navbar-nav {
+	float: right;
+}
+.navbar-inverse .navbar-nav > li > a {
+	font-size: 1.1em;
+	padding: 6px 0px !important;
+	border-radius: 5px;
+	margin: 19px 10px;
+}
+      .logo {
+	font-size: 2.5em;
+	text-shadow: none;
+	margin: 8px 0 0 0;
+}
+
+}
+
+@media (max-width: 768px) {
+
+.hero-text {
+	color: #000;
+	width: 83%;
+	text-align: center;
+	margin: 27% auto 24px auto;
+}
+.hero-text h1 {
+	font-size: 21px !important;
+}
+a.arrow-link {
+	display: none;
+}
+.banner-container {
+	background-size: contain;
+}
+.row .six {
+	width: auto;
+}
+.da-slide h2 {
+	font-size: 28px;
+}
+.banner-content p {
+	font-size: 1.2em;
+	text-shadow: none;
+}
+.hero-img {
+	display: none;
+}
+.da-slide p {
+	width: 67%;
+	top: 122px;
+}
+.team-member .member-img img {
+	max-width: 100%;
+}
+.da-slider {
+	height: 380px;
+	width: 100%;
+	min-width: initial;
+	margin: 0px !important;
+}
+.header .navbar-nav > li > a {
+	padding: 25px 12px;
+}
+.portfolio-item img {
+	text-decoration: none;
+	display: block;
+	width: 330px;
+	height: 228px;
+	float: left;
+	margin: 0 3px 3px 0;
+	opacity: 1;
+	-webkit-transform: scale(1, 1);
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 250ms;
+	-moz-transform: scale(1, 1);
+	-moz-transition-timing-function: ease-out;
+	-moz-transition-duration: 250ms;
+}
+.portfolio-item:hover .folio-info {
+	top: 0px;
+}
+.portfolio-item .portfolio-desc .folio-info {
+	padding: 0px;
+}
+.portfolio-item .portfolio-desc .folio-info h5 {
+	font-size: 1em;
+}
+
+}
+@media (min-width:768px)and (max-width:992px){       .logo {
+	font-size: 1.39em;
+	text-shadow: none;
+	margin: 8px 0 0 0;
+} 
+    .navbar-inverse .navbar-nav > li > a {
+	color: #A5A5A5;
+	font-size: 1.2em;
+	line-height: normal;
+	margin: 16px 8px 0px 7px;
+	padding: 6px 0px !important;
+	border-radius: 5px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	text-transform: lowercase;
+}
+
+}
+@media (max-width:760px) {
+.header .navbar-nav > li > a {
+	padding: 7px 12px;
+	font-size: 14px;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+	border-color: #A8A8A8;
+}
+
+}
+
+
+@media (max-width: 480px) {
+.banner-container {
+	background-size: contain;
+}
+.hero-text h1 {
+	font-size: 17px !important;
+}
+.banner-container > img {
+	width: 100%;
+	height: 240px;
+}
+.responsive-headline {
+	font-size: 16px !important
+}
+.hero-text {
+	margin-top: 29%;
+}
+.navbar {
+	min-height: 69px;
+}
+.arrow-link {
+	display: none;
+}
+.da-slide h2 {
+	font-size: 22px;
+	top: 7px;
+	text-shadow: none;
+}
+.da-slide p {
+	width: 65%;
+	top: 42px;
+	height: 50px;
+}
+#section-top ul li a {
+	height: 28px;
+	line-height: 28px;
+	width: 26px;
+}
+.team-socials a {
+	background: white;
+	padding: 1px 0;
+	margin: 2px;
+}
+.team-socials i {
+	width: 19px;
+	height: 19px;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	font-size: 16px;
+}
+.page-section {
+	padding: 0px;
+}
+.page-section h1 {
+	font-size: 3em;
+}
+.page-section h2 {
+	font-size: 2em;
+}
+.page-section p {
+	font-size: 1em;
+	margin: 0 0 20px;
+}
+.portfolio-item .portfolio-desc .folio-info h5 {
+	font-size: 11px;
+}
+
+}
+
+@media (max-width: 320px) {
+.banner-container {
+	background-size: contain;
+}
+.da-slider {
+	height: 300px;
+}
+.da-slider {
+	width: 100%;
+	min-width: initial;
+	position: relative;
+	margin: 0 auto;
+}
+.da-dots {
+	bottom: 2px;
+}
+.grid .text-content {
+	padding-left: 29%;
+	padding-right: 2%;
+}
+.portfolio-item:hover .folio-info {
+	top: 0px;
+}
+.portfolio-item .portfolio-desc .folio-info h5 {
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: normal;
+	font-size: 10px;
+	margin: 10px 0 0 0;
+}
+nav#filter li {
+	display: inline-block;
+	margin: 0 0 23px 5px;
+}
+         .logo {
+	font-size: 1.5em;
+	text-shadow: none;
+	margin: 5px 0 0 0;
+}
+;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
